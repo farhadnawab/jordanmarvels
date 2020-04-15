@@ -51,6 +51,7 @@
 <style lang="scss">
 #nav {
   height: 100px;
+  border-bottom: 1px solid var(--fourth);
 
   .dropdown-toggle::after {
     display: block;

@@ -33,7 +33,10 @@
         </b-row>
       </b-container>
     </section>
-    <featured></featured>
+
+    <section class="section">
+      <featured></featured>
+    </section>
 
     <section class="section">
       <premium-experience></premium-experience>
