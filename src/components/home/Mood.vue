@@ -1,5 +1,5 @@
 <template>
-  <b-col cols="8" class="mood">
+  <b-col cols="8" class="mood-component">
     <h1 class="heading text-left">What's your mood?</h1>
     <b-row>
       <b-col cols="6">
@@ -48,7 +48,7 @@
 </template>
 
 <style lang="scss">
-.mood {
+.mood-component {
   .row {
     margin-left: -10px;
     margin-right: -10px;

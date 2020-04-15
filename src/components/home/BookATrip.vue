@@ -1,5 +1,5 @@
 <template>
-  <div class="book-a-trip">
+  <div class="book-a-trip-component">
     <div class="buttons">
       <a href="javascript:void(0)"><img src="@/assets/images/book_plane.svg" /> Book a trip</a>
       <a href="javascript:void(0)"><img src="@/assets/images/book_car.svg" /> Rent a car</a>
@@ -91,7 +91,7 @@
   }
 </script>
 <style lang="scss">
-.book-a-trip{
+.book-a-trip-component{
   position: relative;
   z-index: 16;
 
@@ -183,7 +183,7 @@
     }
   }
 }
-.home-view .book-a-trip{
+.home-view .book-a-trip-component{
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);

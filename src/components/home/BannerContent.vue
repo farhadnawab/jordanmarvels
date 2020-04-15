@@ -1,5 +1,5 @@
 <template>
-  <b-carousel-slide img-blank img-alt="Blank image" class="banner-carousel">
+  <b-carousel-slide img-blank img-alt="Blank image" class="banner-carousel-component">
       <template v-slot:img>
       <img
           class="d-block img-fluid w-100"
@@ -42,7 +42,7 @@ export default {
 }
 </script>
 <style lang="scss">
-.banner-carousel{
+.banner-carousel-component{
   position: relative;
   max-height: 660px;
   overflow: hidden;
