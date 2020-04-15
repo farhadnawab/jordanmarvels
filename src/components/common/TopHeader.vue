@@ -106,13 +106,14 @@
     > li{
       margin: 0 15px;
       padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-top: 5px solid transparent;
 
       > a {
-        letter-spacing: 0.535px;
+        padding: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        border-top: 5px solid transparent;
       }
     }
     a{ 
@@ -120,11 +121,10 @@
       color: #000;
       outline: none;
     }
-    > li:hover{
-      border-color: var(--primary);
-      
-      > a{color: var(--primary);font-weight: bold;letter-spacing: 0;}
-    }
+    > li > a.active,
+    > li:hover > a{border-color: var(--primary);color: var(--primary);}
+    > li > a.active{font-weight: bold;}
+    
   }
 }
 </style>
