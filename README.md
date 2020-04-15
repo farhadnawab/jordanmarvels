@@ -2,6 +2,7 @@
 
 ## Project setup
 ```
+git clone https://github.com/Farhadnawab/jordanmarvels.git
 npm install
 ```
 
