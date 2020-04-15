@@ -1,5 +1,5 @@
 <template>
-  <div class="relative home-view">
+  <div class="relative home-view overflow-hidden">
     <div id="banner">
       <b-carousel
         :interval="4000"
@@ -41,7 +41,7 @@
     <section class="section mt-5">
       <premium-experience></premium-experience>
     </section>
-    <section class="section">
+    <section class="section mt-5">
       <travellers-use></travellers-use>
     </section>
     <section class="section">

@@ -85,9 +85,6 @@ export default {
   font-weight: 300;
   font-size: 16px;
     
-  .block{
-    
-  }
   .block .title{
     font-size: 14px;
     font-weight: bold;

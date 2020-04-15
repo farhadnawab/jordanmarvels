@@ -105,6 +105,7 @@ export default {
 .featured-box {
   position: relative;
   padding: 20px 0;
+  
   h2 {
     font-size: 16px;
     text-transform: uppercase;
