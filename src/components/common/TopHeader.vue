@@ -41,7 +41,7 @@
         </b-nav-item-dropdown>
         
         <b-nav-item href="#"><span class="dropdown-toggle">Sign up</span></b-nav-item>
-        <b-nav-item href="#"><span class="dropdown-toggle">Get App</span></b-nav-item>
+        <b-nav-item href="#" class="active"><span class="dropdown-toggle">Get App</span></b-nav-item>
         
       </b-navbar-nav>
     </b-collapse>
@@ -89,6 +89,7 @@
       color: #000;
       outline: none;
     }
+    > li.active,
     > li:hover{
       background: var(--primary);
       

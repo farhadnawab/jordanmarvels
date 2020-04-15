@@ -11,7 +11,7 @@
     <div class="text-right book-now-wrap">
       <div class="start-price">
         starting from
-        <div><strong>$180,</strong>00</div>
+        <div><strong>$180,<small>00</small></strong></div>
       </div>
       <book-now>Book Now</book-now>
     </div>
@@ -35,8 +35,9 @@ export default {
 <style lang="scss">
 .premuim-box {
   h1 {
-    color: #50473d;
-    font-size: 30px;
+    color: var(--tertiary);
+    font-size: 34px;
+    font-weight: 300;
   }
   figure {
     margin-bottom: 0;
@@ -51,8 +52,16 @@ export default {
       top: -20px;
       left: 0;
       line-height: 25px;
+      font-weight: 300;
+      font-size: 12px;
+
       strong {
         font-size: 25px;
+        font-weight: bold;
+
+        small{
+          font-size: 60%;
+        }
       }
     }
   }

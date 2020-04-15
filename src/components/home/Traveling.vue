@@ -40,31 +40,32 @@ export default {
   }
 }
 .home-beniffit {
-  background: #c7b298;
+  background: var(--primary);
   padding: 40px 40px 100px 40px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
     li {
-      padding-left: 90px;
-      color: #3b352d;
+      padding-left: 80px;
+      color: var(--tertiary);
       font-size: 20px;
       font-weight: bold;
       text-align: left;
       margin-bottom: 30px;
       &:nth-child(1) {
-        background: url(../../assets/discover.png) no-repeat -12px;
-        background-size: 30%;
+        background: url(../../assets/images/discover.svg) no-repeat -12px;
+        background-size: 74px;
       }
       &:nth-child(2) {
-        background: url(../../assets/secure.png) no-repeat center left;
-        background-size: 20%;
+        background: url(../../assets/images/secure_payment.svg) no-repeat center left;
+        background-size: 55px;
       }
       &:nth-child(3) {
-        background: url(../../assets/havefun.png) no-repeat center left;
-        background-size: 21%;
+        background: url(../../assets/images/giveback.svg) no-repeat center left;
+        background-size: 55px;
       }
     }
   }

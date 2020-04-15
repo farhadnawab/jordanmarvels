@@ -1,6 +1,7 @@
 <template>
   <b-col cols="8" class="mood-component">
-    <h1 class="title-1 text-left">What's your mood?</h1>
+    <h1 class="title-1">What's your mood?</h1>
+
     <b-row>
       <b-col cols="6">
         <figure>
@@ -52,45 +53,60 @@
   .row {
     margin-left: -10px;
     margin-right: -10px;
-  }
-  .col-6 {
-    padding-left: 10px;
-    padding-right: 10px;
-    figure {
-      margin-bottom: 20px;
-      position: relative;
-      figcaption {
-        position: absolute;
-        text-align: right;
-        bottom: 0;
-        width: 100%;
-        padding: 20px;
-        h1 {
-          color: #fff;
-          font-size: 24px;
-          font-weight: bold;
-        }
-        a {
-          color: #fff;
-          text-decoration: none;
-          text-transform: uppercase;
-          display: inline-block;
-          position: relative;
-          padding-right: 15px;
-          &::before {
-            content: "";
-            position: absolute;
-            width: 30px;
-            left: -40px;
-            border-top: 1px solid #d5d5d5;
-            top: 50%;
-          }
-          &::after {
-            content: ">";
-            position: absolute;
 
-            right: 0px;
-          }
+    > div{
+      padding: 10px;
+    }
+  }
+  figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+
+    img{
+      -webkit-transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      transition: all ease 0.3s;
+    }
+    &:hover img{
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    figcaption {
+      position: absolute;
+      text-align: right;
+      bottom: 0;
+      width: 100%;
+      padding: 20px;
+
+      h1 {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.1;
+      }
+      a {
+        display: inline-flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+
+        &:before{
+          content: "";
+          background-image: url("../../assets/images/destination_line.svg");
+          width: 35px;
+          height: 1px;
+          margin-right: 10px;
+        }
+        &:after{
+          content: "";
+          background-image: url("../../assets/images/dropdown.sign.svg");
+          width: 11.216px;
+          height: 17.269px;
+          margin-left: 10px;
         }
       }
     }

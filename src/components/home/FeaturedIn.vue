@@ -1,8 +1,10 @@
 <template>
-  <div id="featured-in">
-    <div class="position-relative top-heading">
-      <h6>Jordan Marvels Has Been Fetures In</h6>
+  <div class="featured-in">
+    
+    <div class="top-heading text-center">
+      <span>Jordan Marvels Has Been Fetures In</span>
     </div>
+    
     <b-container class="jordan-featured-wrap">
       <b-row>
         <b-col>
@@ -27,16 +29,32 @@ export default {
 };
 </script>
 <style lang="scss">
-#featured-in {
+.featured-in {
+
   .top-heading {
     position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primary);
+
+    span{
+      display: inline-block;
+      background: #fff;
+      padding: 0 30px;
+    }
     &::after {
       content: "";
       width: 100%;
-      border-top: 1px solid #c7b298;
+      border-top: 1px solid var(--primary);
       position: absolute;
+      z-index: -1;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      transform: translateY(-50%);
       left: 0;
-      top: 11px;
+      right: 0;
     }
   }
   h6 {

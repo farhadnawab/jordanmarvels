@@ -9,6 +9,8 @@
     --tertiary: #50473D;
     --quaternary: #BFBFBF;
     --fourth: #E0E0E0;
+    --fifth: #F1ECE5;
+    --sixth: #4A4642;
     /* var(--primary); */
 }
 body{
@@ -52,17 +54,39 @@ body{
 
 .title-1 {
     color: var(--tertiary);
+    font-size: 44px;
     font-weight: bold;
     position: relative;
-    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-bottom: 60px;
 
     &::before {
-      content: "";
-      position: absolute;
-      width: 100px;
-      border-top: 2px solid var(--quaternary);
-      top: 50%;
-      right: 100%;
-      margin-right: 30px;
+        content: "";
+        position: absolute;
+        width: 100px;
+        border-top: 2px solid var(--quaternary);
+        top: 50%;
+        right: 100%;
+        margin-right: 30px;
     }
-  }
+}
+
+
+
+/*** RESPONSIVE ***/
+/******************/
+
+@media (min-width: 1200px){
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1250px;
+    }
+}
+@media (min-width: 992px){
+    
+}
+@media (min-width: 768px){
+    
+}
+@media (min-width: 576px){
+    
+}

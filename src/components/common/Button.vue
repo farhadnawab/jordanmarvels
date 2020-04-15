@@ -5,7 +5,7 @@
 <style lang="scss">
 a {
   &.book-now {
-    background: #f1ece5;
+    background: var(--fifth);
     display: inline-block;
     color: #000;
     font-weight: bold;
@@ -15,15 +15,24 @@ a {
     text-transform: uppercase;
     font-size: 14px;
     position: relative;
+
     &::after {
-      content: ">";
+      content: "";
+      background-image: url("../../assets/images/btn_right_arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 9px;
+      height: 14px;
       position: absolute;
+      top: 50%;
       right: 20px;
-      font-size: 16px;
-      line-height: 16px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      transform: translateY(-50%);
     }
     &:hover {
-      background: #f3c01b;
+      background: var(--secondary);
     }
   }
 }

@@ -34,11 +34,11 @@
       </b-container>
     </section>
 
-    <section class="section">
+    <section class="section mt-5">
       <featured></featured>
     </section>
 
-    <section class="section">
+    <section class="section mt-5">
       <premium-experience></premium-experience>
     </section>
     <section class="section">

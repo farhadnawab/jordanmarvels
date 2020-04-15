@@ -8,8 +8,8 @@
   h6 {
     color: #fff;
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 13px;
   }
 }
 </style>

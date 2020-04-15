@@ -10,11 +10,11 @@
       <b-container>
         <b-row>
           <b-col>
-            <carousel :items="4" :nav="false" :dots="false" :margin="20">
+            <carousel :items="4" :nav="true" :dots="false" :margin="20">
               <div class="featured-box">
                 <h2>Weekend In Joradn</h2>
                 <figure>
-                  <img src="../../assets/0015.png" alt="" />
+                  <div class="image-div"><img src="../../assets/0015.png" alt="" /></div>
                   <figcaption>
                     <div class="price-start">
                       starting from <strong> $240</strong>,00
@@ -26,7 +26,7 @@
               <div class="featured-box">
                 <h2>Weekend In Joradn</h2>
                 <figure>
-                  <img src="../../assets/0016.png" alt="" />
+                  <div class="image-div"><img src="../../assets/0016.png" alt="" /></div>
                   <figcaption>
                     <div class="price-start">
                       starting from <strong> $240</strong>,00
@@ -38,7 +38,7 @@
               <div class="featured-box">
                 <h2>Weekend In Joradn</h2>
                 <figure>
-                  <img src="../../assets/0017.png" alt="" />
+                  <div class="image-div"><img src="../../assets/0017.png" alt="" /></div>
                   <figcaption>
                     <div class="price-start">
                       starting from <strong> $240</strong>,00
@@ -50,7 +50,7 @@
               <div class="featured-box">
                 <h2>Weekend In Joradn</h2>
                 <figure>
-                  <img src="../../assets/0018.png" alt="" />
+                  <div class="image-div"><img src="../../assets/0018.png" alt="" /></div>
                   <figcaption>
                     <div class="price-start">
                       starting from <strong> $240</strong>,00
@@ -62,7 +62,7 @@
               <div class="featured-box">
                 <h2>Weekend In Joradn</h2>
                 <figure>
-                  <img src="../../assets/0015.png" alt="" />
+                  <div class="image-div"><img src="../../assets/0015.png" alt="" /></div>
                   <figcaption>
                     <div class="price-start">
                       starting from <strong> $240</strong>,00
@@ -74,7 +74,7 @@
               <div class="featured-box">
                 <h2>Weekend In Joradn</h2>
                 <figure>
-                  <img src="../../assets/0015.png" alt="" />
+                  <div class="image-div"><img src="../../assets/0015.png" alt="" /></div>
                   <figcaption>
                     <div class="price-start">
                       starting from <strong> $240</strong>,00
@@ -114,6 +114,18 @@ export default {
   }
   figure {
     position: relative;
+    
+    .image-div{overflow: hidden;}
+    img{
+      -webkit-transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      transition: all ease 0.3s;
+    }
+    &:hover img{
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+    }
     figcaption {
       position: absolute;
       top: 0;
@@ -131,11 +143,65 @@ export default {
         position: absolute;
         right: 20px;
         bottom: 30px;
+        font-weight: 300;
+        font-size: 14px;
+
         strong {
-          font-size: 35px;
+          font-size: 30px;
+          font-weight: bold;
         }
       }
     }
+  }
+}
+.featured-wrap{
+  position: relative;
+
+  .container > .row > div{position: static;}
+  .owl-carousel{position: static;}
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100px;
+    height: 81%;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: var(--fifth) !important;
+
+    &:hover{
+      background: var(--secondary) !important;
+    }
+  }
+  .owl-nav .owl-next{
+    right: 0;
+    left: auto;
+  }
+  .owl-nav .owl-prev:before{
+    content:"";
+    display: block;
+    width: 22px;
+    height: 39px;
+    background-image: url("../../assets/images/featured_arrow_left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .owl-nav .owl-next:before{
+    content:"";
+    display: block;
+    width: 22px;
+    height: 39px;
+    background-image: url("../../assets/images/featured_arrow_right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
 </style>
