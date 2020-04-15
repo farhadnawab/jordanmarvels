@@ -1,7 +1,7 @@
 <template>
   <b-col cols="4" class="traveling">
     <div class="travel-wrap">
-      <h1 class="heading text-left">Traveling with us</h1>
+      <h1 class="title-1 text-left">Traveling with us</h1>
       <div class="home-beniffit">
         <ul>
           <li>

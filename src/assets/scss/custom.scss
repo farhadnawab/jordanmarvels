@@ -49,3 +49,20 @@ body{
 .section {
     padding-top: 50px;
 }
+
+.title-1 {
+    color: var(--tertiary);
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      border-top: 2px solid var(--quaternary);
+      top: 50%;
+      right: 100%;
+      margin-right: 30px;
+    }
+  }

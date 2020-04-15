@@ -1,6 +1,6 @@
 <template>
   <b-col cols="8" class="mood-component">
-    <h1 class="heading text-left">What's your mood?</h1>
+    <h1 class="title-1 text-left">What's your mood?</h1>
     <b-row>
       <b-col cols="6">
         <figure>

@@ -2,7 +2,7 @@
   <b-container>
     <b-row class="align-items-center">
       <b-col cols="9"
-        ><h1 class="heading text-left">{{ heading }}</h1></b-col
+        ><h1 class="title-1 text-left">{{ heading }}</h1></b-col
       >
       <b-col cols="3 text-right">
         <a class="btnlink" :href="`${btnLink}`">{{ btnText }} </a>
