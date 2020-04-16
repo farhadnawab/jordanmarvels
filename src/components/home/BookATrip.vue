@@ -24,12 +24,12 @@
               <b-col cols="6">
                 <label class="label">Start Date</label>
                 <label for="start-date" class="text-nowrap">{{ startDate }}</label>
-                <b-form-datepicker id="start-date" v-model="startDate" class="hide-date-field"></b-form-datepicker>
+                <!--<b-form-datepicker id="start-date" v-model="startDate" class="hide-date-field"></b-form-datepicker>-->
               </b-col>
               <b-col cols="6">
                 <label class="label">End Date</label>
                 <label for="start-date" class="text-nowrap">{{ endDate }}</label>
-                <b-form-datepicker v-model="endDate" class="hide-date-field"></b-form-datepicker>
+                <!--<b-form-datepicker v-model="endDate" class="hide-date-field"></b-form-datepicker>-->
               </b-col>
             </b-row>
           </b-container>
@@ -145,6 +145,7 @@
       font-size: inherit;
       font-weight: inherit;
       outline: none;
+      border: 0;
     }
     .form-select{
       font-size: inherit;
