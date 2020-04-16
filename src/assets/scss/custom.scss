@@ -11,6 +11,7 @@
     --fourth: #E0E0E0;
     --fifth: #F1ECE5;
     --sixth: #4A4642;
+    --seventh: #EADCCB;
     /* var(--primary); */
 }
 body{
@@ -19,8 +20,23 @@ body{
     font-size: 16px;
 }
 
-.form-select{
-    background: #fff url("../images/dropdown.arrow.black.svg") no-repeat right 0.75rem center/15px;
+
+.btn-secondary {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+
+    &:hover,
+    &:focus, &.focus{
+        color: #fff;
+        background-color: var(--tertiary);
+        border-color: var(--tertiary);
+    }
 }
 
 .btn, .btn:focus{
@@ -52,6 +68,8 @@ body{
     padding-top: 50px;
 }
 
+
+/* TITLES */
 .title-1 {
     color: var(--tertiary);
     font-size: 44px;
@@ -70,7 +88,202 @@ body{
         margin-right: 30px;
     }
 }
+.title-2 {
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primary);
 
+    span{
+        display: inline-block;
+        background: #fff;
+        padding: 0 30px;
+    }
+    &::after {
+        content: "";
+        width: 100%;
+        border-top: 1px solid var(--primary);
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+    }
+}
+
+
+/* Social - Sign up buttons */
+.btn.facebook-signup {
+    background: #0069C2;
+    color: #fff;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+
+    img{
+        margin-right: 10px;
+    }
+
+    &:hover{
+        background: #025fae;
+    }
+}
+.btn.google-signup {
+    background: #E81A1E;
+    color: #fff;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+
+    img{
+        margin-right: 10px;
+    }
+
+    &:hover{
+        background: #DA0509;
+    }
+}
+
+/*** MODAL THEMING ***/
+.modal-dialog .modal-content {
+    border-radius: 5px;
+    border: 0;
+    overflow: hidden;
+}
+.modal-dialog .modal-content > header .close {
+    position: absolute;
+    z-index: 1;
+    top: 22px;
+    right: 15px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 29px;
+    height: 29px;
+    font-size: 0;
+    background-image: url("../../assets/images/popup_cancel.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 1 !important;
+}
+
+/* Form Controls */
+.form-select{
+    background: #fff url("../images/dropdown.arrow.black.svg") no-repeat right 0.75rem center/15px;
+}
+.form-control {
+    height: calc(2em + 0.75rem + 2px);
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid var(--seventh);
+    font-weight: 300;
+    color: var(--tertiary);
+    background: #fff;
+}
+.form-control:focus,
+.form-control.show{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: var(--secondary);
+    color: var(--tertiary);
+
+    ~ .input-group-prepend .input-group-text, ~ .input-group-append .input-group-text{
+        color: var(--tertiary);
+    }
+    ~ .input-group-prepend svg, ~ .input-group-append svg,
+    ~ .input-group-prepend svg path, ~ .input-group-append svg path{
+        fill: var(--tertiary);
+    }
+}
+.input-group > .form-control:focus, .input-group > .custom-select:focus, .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label{
+    z-index: 0;
+}
+
+.input-group .input-group-prepend,
+.input-group .input-group-append {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+}
+.input-group .input-group-append{
+    right: 0;
+    left: auto;
+}
+.input-group .input-group-text{
+    background: transparent;
+    border: 0;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--seventh);
+    padding-bottom: 8px;
+
+    svg, svg path{
+        fill: var(--seventh);
+    }
+}
+.input-group.icon-prepend .form-control{
+    padding-left: 40px;
+}
+.input-group.icon-append .form-control{
+    padding-right: 40px;
+}
+.b-form-datepicker ~ .input-group-append {
+    width: 115px;
+}
+.input-group.icon-append .b-form-datepicker {
+    padding-right: 115px !important;
+}
+.b-form-datepicker > .btn {
+    visibility: hidden;
+    opacity: 0;
+    width: 40px;
+}
+
+.custom-control{
+    padding-left: 2.5rem;
+}
+.custom-control-label::before {
+    top: -2px;
+    left: -2.5rem;
+    width: 28px;
+    height: 28px;
+    border: var(--secondary) solid 3px;
+}
+.custom-control-label::after{
+    top: -2px;
+    left: -2.5rem;
+    width: 28px;
+    height: 28px;
+}
+.custom-control-input{
+    width: 28px;
+    height: 28px;
+}
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before,
+.custom-control-input:checked ~ .custom-control-label::before{
+    border-color: var(--secondary);
+    background-color: var(--secondary);
+}
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before{
+    border-color: var(--secondary);
+}
+.custom-control-input:focus ~ .custom-control-label::before{
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 32, 0.25);
+}
 
 
 /*** RESPONSIVE ***/

@@ -1,7 +1,7 @@
 <template>
   <div class="featured-in">
     
-    <div class="top-heading text-center">
+    <div class="title-2 text-center">
       <span>Jordan Marvels Has Been Fetures In</span>
     </div>
     
@@ -31,32 +31,6 @@ export default {
 <style lang="scss">
 .featured-in {
 
-  .top-heading {
-    position: relative;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--primary);
-
-    span{
-      display: inline-block;
-      background: #fff;
-      padding: 0 30px;
-    }
-    &::after {
-      content: "";
-      width: 100%;
-      border-top: 1px solid var(--primary);
-      position: absolute;
-      z-index: -1;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      transform: translateY(-50%);
-      left: 0;
-      right: 0;
-    }
-  }
   h6 {
     position: relative;
     text-transform: uppercase;

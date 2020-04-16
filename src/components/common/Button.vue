@@ -7,7 +7,7 @@ a {
   &.book-now {
     background: var(--fifth);
     display: inline-block;
-    color: #000;
+    color: var(--tertiary);
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
@@ -18,7 +18,7 @@ a {
 
     &::after {
       content: "";
-      background-image: url("../../assets/images/btn_right_arrow.svg");
+      background-image: url("../../assets/images/btn_right_arrow_tertiary.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;

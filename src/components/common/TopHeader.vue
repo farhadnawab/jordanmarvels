@@ -40,14 +40,25 @@
           <b-dropdown-item href="#">EURO</b-dropdown-item>
         </b-nav-item-dropdown>
         
-        <b-nav-item href="#"><span class="dropdown-toggle">Sign up</span></b-nav-item>
+        <b-nav-item href="#" @click="$bvModal.show('login-signup-popup')"><span class="dropdown-toggle">Sign up</span></b-nav-item>
         <b-nav-item href="#" class="active"><span class="dropdown-toggle">Get App</span></b-nav-item>
         
+        <login-signup-popup />
       </b-navbar-nav>
     </b-collapse>
 
   </b-navbar>
 </template>
+<script>
+import LoginSignupPopup from "../Popup/LoginSignupPopup";
+
+export default {
+  name: "TopHeader",
+  components: {
+    LoginSignupPopup
+  }
+}
+</script>
 <style lang="scss">
 #nav {
   height: 100px;

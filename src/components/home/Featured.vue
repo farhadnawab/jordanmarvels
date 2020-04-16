@@ -109,7 +109,7 @@ export default {
   h2 {
     font-size: 16px;
     text-transform: uppercase;
-    color: #000;
+    color: var(--tertiary);
     text-align: center;
     font-weight: bold;
   }

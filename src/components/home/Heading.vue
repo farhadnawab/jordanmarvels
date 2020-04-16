@@ -36,7 +36,7 @@ export default {
 
   &::after {
     content: "";
-    background-image: url("../../assets/images/btn_right_arrow.svg");
+    background-image: url("../../assets/images/btn_right_arrow_tertiary.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
